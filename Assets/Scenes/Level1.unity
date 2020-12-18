@@ -789,6 +789,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 530263880}
     m_Modifications:
+    - target: {fileID: 7611288643684833385, guid: 4e546e2f58037404297545762b5d5beb,
+        type: 3}
+      propertyPath: imagePerSentence.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611288643684833385, guid: 4e546e2f58037404297545762b5d5beb,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: ' swamp."hears me and calls me a faggot. I knew he was just jealous of
+        my devotion to Shrek. I called him a cunt. He hits me and sends me to sleep.
+        I''m crying now and my face hurts. I lay in bed, really cold. I feel something
+        warm... It''s Shrek! I was so happy. He whispers in my ear "This is my swamp."'
+      objectReference: {fileID: 0}
     - target: {fileID: 7611288643684833387, guid: 4e546e2f58037404297545762b5d5beb,
         type: 3}
       propertyPath: m_LocalPosition.x

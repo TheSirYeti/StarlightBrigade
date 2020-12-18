@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7B586F34-E052-FF77-BE75-67B74EAA3C9C}</ProjectGuid>
+    <ProjectGuid>{77B0D4CA-0D9A-8AFF-AD5F-E89F5A33B048}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -79,37 +79,37 @@
      <Compile Include="Assets\Scripts\UI\restart.cs" />
      <Compile Include="Assets\Scripts\UI\startSound.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Juampitito/Unity Saves/Parcial 2 - Rshaid/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>T:/Users/Juampitito/Documents/GitHub/StarlightBrigade/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Users/Juampitito/Unity/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
