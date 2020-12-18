@@ -9,20 +9,19 @@ public class WaveManager : MonoBehaviour
     private int lineAmount;
     public List<GameObject> enemyPrefabs = new List<GameObject>();
     private List<int> enemyAmount = new List<int>();
-    public GameObject bossPrefab;
     public GameObject background;
     public GameObject player;
     public string nextLevel;
     public bool inDialogue = false;
-    public GameObject dialogueManager;
-    // Start is called before the first frame update
-
-
+    public List<GameObject> cutscenes = new List<GameObject>();
+    private int cutsceneManager = 0;
 
     void Start()
     {
+        foreach(GameObject dialogue in cutscenes){
+            dialogue.SetActive(false);
+        }
         player = GameObject.FindWithTag("Player");
-        waveAmount = 7;
         SoundManager.instance.Play(SoundID.MUSIC_LEVEL1,true, 0.25f, 1f);
         initializePositionArray();
     }
@@ -46,6 +45,10 @@ public class WaveManager : MonoBehaviour
             waveAmount--;
             enemyAmount.Clear();
             switch(waveAmount){
+                case 7:
+                    inDialogue = true;
+                    cutscenes[cutsceneManager].SetActive(true);
+                    break;
                 case 6:
                     background.GetComponent<BackgroundMovement>().moveNext();
                     enemyAmount.Add(2);
@@ -78,11 +81,19 @@ public class WaveManager : MonoBehaviour
                     generateLevel();
                     break;
                 case 1:
+                    inDialogue = true;
+                    cutscenes[cutsceneManager].SetActive(true);
+                    break;
+
+                case 0:
                     background.GetComponent<BackgroundMovement>().moveNext();
                     GameObject fade = GameObject.FindWithTag("FadeManager");
                     fade.GetComponent<FadeManager>().startTransition(nextLevel);
                     break;
             }
+        } else if(cutscenes[cutsceneManager].GetComponent<Speech>().finished){
+            inDialogue = false;
+            cutsceneManager++;
         }
     }
 

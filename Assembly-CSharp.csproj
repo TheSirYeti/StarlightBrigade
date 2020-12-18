@@ -65,7 +65,8 @@
      <Compile Include="Assets\Scripts\Level Behaviour\CursorVisible.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\LowLifeUI.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\SoundManager.cs" />
-     <Compile Include="Assets\Scripts\Level Behaviour\WaveManager.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager_Boss1.cs" />
      <Compile Include="Assets\Scripts\Player\bulletScript.cs" />
      <Compile Include="Assets\Scripts\Player\Performance.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBehaviour.cs" />

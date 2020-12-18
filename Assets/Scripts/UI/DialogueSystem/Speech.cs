@@ -9,21 +9,22 @@ public class Speech : MonoBehaviour
     public List<string> sentences = new List<string>();
     private int index;
     public float typingSpeed;
-    public string name;
+    public List<string> names = new List<string>();
     public Text nameText;
     public Animator animator;
     public Image[] images;
     public bool skip = false;
-    private bool isTyping;
+    public bool isTyping;
     public List<int> imagePerSentence = new List<int>();
+    public bool finished = false;
+
 
     void Start(){
         StartCoroutine(TypeSentence());
-        nameText.text = name;
     }
 
     void Update(){
-        if(Input.GetKeyDown("space")){
+        /*if(Input.GetKeyDown("return")){
             if(!skip){
                 textBox.text = "";
                 int counter = 0;
@@ -40,15 +41,17 @@ public class Speech : MonoBehaviour
             } else if(isTyping == false){
                 NextSentence();
             }
-        }
+        }*/
         
     }
 
     IEnumerator TypeSentence(){
         isTyping = true;
-        print(index);
         int counter = 0;
+        //setAvatar(imagePerSentence[index]);
         foreach(char letter in sentences[index].ToCharArray()){
+            print(letter);
+            print(sentences[index]);
             if(!skip){
                 if(counter >= 69){
                     textBox.text += "\n";
@@ -56,12 +59,12 @@ public class Speech : MonoBehaviour
                 }
                 textBox.text += letter;
                 counter++;
+                Debug.Log(new WaitForSeconds(typingSpeed));
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
         isTyping = false;
         skip = true;
-
     }
 
     public void NextSentence(){
@@ -73,6 +76,16 @@ public class Speech : MonoBehaviour
         } else {
             textBox.text = "";
             animator.SetTrigger("noMoreDialogue");
+            finished = true;
         }
     }
+
+    /*void setAvatar(int image){
+        for(int i = 0; i < images.Length; i++){
+            if(imagePerSentence[image] == i){
+                images[i].enabled = true;
+                nameText.text = names[i];
+            } else images[i].enabled = false;
+        }
+    }*/
 }
