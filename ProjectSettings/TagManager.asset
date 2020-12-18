@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
+  - addHP
+  - Boss
+  - Panel
+  - FadeManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Enemy
+  - Player
+  - Turret
+  - Boss
+  - EnemyBullet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background3
+    uniqueID: 1953724449
+    locked: 0
+  - name: Background2
+    uniqueID: 2508767233
+    locked: 0
+  - name: Background
+    uniqueID: 3842942221
+    locked: 0
+  - name: Midground2
+    uniqueID: 3614772725
+    locked: 0
+  - name: Midground1
+    uniqueID: 2735460737
+    locked: 0
+  - name: Foreground
+    uniqueID: 364120733
+    locked: 0
+  - name: UI
+    uniqueID: 3004206917
+    locked: 0
