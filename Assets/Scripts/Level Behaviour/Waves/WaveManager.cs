@@ -14,13 +14,15 @@ public class WaveManager : MonoBehaviour
     public string nextLevel;
     public bool inDialogue = false;
     public List<GameObject> cutscenes = new List<GameObject>();
-    private int cutsceneManager = 0;
+    public int cutsceneManager = 0;
+    private GameObject currentDialogue;
+    private bool dialogueFlag;
 
     void Start()
     {
-        foreach(GameObject dialogue in cutscenes){
-            dialogue.SetActive(false);
-        }
+        //foreach(GameObject dialogue in cutscenes){
+        //    dialogue.SetActive(false);
+        //}
         player = GameObject.FindWithTag("Player");
         SoundManager.instance.Play(SoundID.MUSIC_LEVEL1,true, 0.25f, 1f);
         initializePositionArray();
@@ -46,8 +48,12 @@ public class WaveManager : MonoBehaviour
             enemyAmount.Clear();
             switch(waveAmount){
                 case 7:
+                    currentDialogue = new GameObject();
+                    currentDialogue = Instantiate(cutscenes[cutsceneManager], cutscenes[cutsceneManager].transform.position, cutscenes[cutsceneManager].transform.rotation);
+                    currentDialogue.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
                     inDialogue = true;
-                    cutscenes[cutsceneManager].SetActive(true);
+                    dialogueFlag = true;
+                    //cutscenes[cutsceneManager].SetActive(true);
                     break;
                 case 6:
                     background.GetComponent<BackgroundMovement>().moveNext();
@@ -81,17 +87,20 @@ public class WaveManager : MonoBehaviour
                     generateLevel();
                     break;
                 case 1:
+                    currentDialogue = new GameObject();
+                    currentDialogue = Instantiate(cutscenes[cutsceneManager], cutscenes[cutsceneManager].transform.position, cutscenes[cutsceneManager].transform.rotation);
+                    currentDialogue.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
                     inDialogue = true;
-                    cutscenes[cutsceneManager].SetActive(true);
+                    dialogueFlag = true;
                     break;
-
                 case 0:
                     background.GetComponent<BackgroundMovement>().moveNext();
                     GameObject fade = GameObject.FindWithTag("FadeManager");
                     fade.GetComponent<FadeManager>().startTransition(nextLevel);
                     break;
             }
-        } else if(cutscenes[cutsceneManager].GetComponent<Speech>().finished){
+        } else if(currentDialogue.GetComponent<Speech>().finished && dialogueFlag){
+            dialogueFlag = false;
             inDialogue = false;
             cutsceneManager++;
         }

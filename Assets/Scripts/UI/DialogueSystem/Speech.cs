@@ -24,7 +24,7 @@ public class Speech : MonoBehaviour
     }
 
     void Update(){
-        /*if(Input.GetKeyDown("return")){
+        if(Input.GetKeyDown("return")){
             if(!skip){
                 textBox.text = "";
                 int counter = 0;
@@ -41,17 +41,15 @@ public class Speech : MonoBehaviour
             } else if(isTyping == false){
                 NextSentence();
             }
-        }*/
+        }
         
     }
 
     IEnumerator TypeSentence(){
         isTyping = true;
         int counter = 0;
-        //setAvatar(imagePerSentence[index]);
+        setAvatar(imagePerSentence[index]);
         foreach(char letter in sentences[index].ToCharArray()){
-            print(letter);
-            print(sentences[index]);
             if(!skip){
                 if(counter >= 69){
                     textBox.text += "\n";
@@ -59,7 +57,6 @@ public class Speech : MonoBehaviour
                 }
                 textBox.text += letter;
                 counter++;
-                Debug.Log(new WaitForSeconds(typingSpeed));
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
@@ -74,18 +71,18 @@ public class Speech : MonoBehaviour
             skip = false;
             StartCoroutine(TypeSentence());
         } else {
+            finished = true;
             textBox.text = "";
             animator.SetTrigger("noMoreDialogue");
-            finished = true;
         }
     }
 
-    /*void setAvatar(int image){
+    void setAvatar(int image){
         for(int i = 0; i < images.Length; i++){
             if(imagePerSentence[image] == i){
                 images[i].enabled = true;
                 nameText.text = names[i];
             } else images[i].enabled = false;
         }
-    }*/
+    }
 }
