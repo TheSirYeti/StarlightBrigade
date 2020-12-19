@@ -184,6 +184,7 @@ MonoBehaviour:
   cutscenes:
   - {fileID: 8689723290386436419, guid: 19645591cc9878145a4ac8ac6e6f419f, type: 3}
   - {fileID: 4519369503596206154, guid: 6e1e15ab569b3f3429a88ebf360407f1, type: 3}
+  cutsceneManager: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -239,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &688836094
 PrefabInstance:
@@ -301,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 4698433197324348062, guid: 4ef4b6f0e37252e4a858365a83eab9cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4698433197324348062, guid: 4ef4b6f0e37252e4a858365a83eab9cd,
         type: 3}
@@ -392,6 +393,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3894284110461676352, guid: 00b77a6323444004e852008decaa2c03,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894284110461676352, guid: 00b77a6323444004e852008decaa2c03,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894284110461676352, guid: 00b77a6323444004e852008decaa2c03,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5462736974181791893, guid: 00b77a6323444004e852008decaa2c03,
         type: 3}
       propertyPath: restartPanel
@@ -402,6 +418,11 @@ PrefabInstance:
       propertyPath: winPanel
       value: 
       objectReference: {fileID: 425117718}
+    - target: {fileID: 5462736974181791893, guid: 00b77a6323444004e852008decaa2c03,
+        type: 3}
+      propertyPath: amDead
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6135519790461636978, guid: 00b77a6323444004e852008decaa2c03,
         type: 3}
       propertyPath: MainCamera
@@ -543,7 +564,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461294628 stripped
 GameObject:
@@ -630,7 +651,7 @@ Transform:
   m_LocalScale: {x: 0.86579394, y: 0.8551051, z: 0.8551051}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2133555675
 MonoBehaviour:
@@ -701,7 +722,7 @@ PrefabInstance:
     - target: {fileID: 3032613287252094794, guid: 811eabb9dc4e3bd4c8b31c4ac371e66d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3032613287252094794, guid: 811eabb9dc4e3bd4c8b31c4ac371e66d,
         type: 3}

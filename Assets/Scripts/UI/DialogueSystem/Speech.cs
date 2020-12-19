@@ -21,6 +21,11 @@ public class Speech : MonoBehaviour
 
     void Start(){
         StartCoroutine(TypeSentence());
+        string test = "";
+        foreach(int i in imagePerSentence){
+            test += i + " ";
+        }
+        print(test);
     }
 
     void Update(){
@@ -78,11 +83,11 @@ public class Speech : MonoBehaviour
     }
 
     void setAvatar(int image){
+        print(imagePerSentence[image]);
         for(int i = 0; i < images.Length; i++){
-            if(imagePerSentence[image] == i){
-                images[i].enabled = true;
-                nameText.text = names[i];
-            } else images[i].enabled = false;
+            images[i].enabled = false;
         }
+        images[image].enabled = true;
+        nameText.text = names[image];
     }
 }

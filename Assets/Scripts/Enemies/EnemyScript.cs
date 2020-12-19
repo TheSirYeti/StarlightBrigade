@@ -97,15 +97,15 @@ public class EnemyScript : MonoBehaviour
     void SelectEnemyType(){
             switch(enemyType){
                 case 1:
-                    hp = 1; //4
+                    hp = 4; //4
                     fireRate = 15;
                     break;
                 case 2:
-                    hp = 1; //6
+                    hp = 6; //6
                     fireRate = 20;
                     break;
                 case 3:
-                    hp = 1; //6
+                    hp = 6; //6
                     fireRate = 15;
                     break;
             }

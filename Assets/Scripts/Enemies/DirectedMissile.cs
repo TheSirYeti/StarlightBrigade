@@ -54,10 +54,14 @@ public class DirectedMissile : MonoBehaviour
         if(preStartTime < Time.timeSinceLevelLoad){
             if(col.gameObject.tag.Equals("Player")){
                 if(col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.time){
+                    //col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+                    //col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
                     col.gameObject.GetComponent<Performance>().hp-=10;
                     col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.time;
                 }
             }
+            col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             Destroy(gameObject);
         }
         

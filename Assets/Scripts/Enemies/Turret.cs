@@ -26,7 +26,7 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         if(!player.GetComponent<PlayerBehaviour>().deathFlag && this.transform.parent.GetComponent<BossScript>().diedTimer == -1){
             Vector2 targetPos = (Vector2)target.position;
             Vector2 direction = targetPos - (Vector2)transform.position;
