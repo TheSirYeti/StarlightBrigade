@@ -12,6 +12,7 @@ TagManager:
   - Panel
   - FadeManager
   - Canvas
+  - CanvasBoss
   layers:
   - Default
   - TransparentFX

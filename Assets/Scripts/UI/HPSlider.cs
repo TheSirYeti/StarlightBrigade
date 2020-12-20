@@ -11,6 +11,10 @@ public class HPSlider : MonoBehaviour
         GameObject boss = GameObject.FindWithTag("Boss");
         slider.maxValue = boss.GetComponent<BossScript>().hp;
         slider.value = slider.maxValue;
+        GameObject canvas = GameObject.FindWithTag("CanvasBoss");
+        if(canvas != null){
+            this.transform.SetParent(canvas.transform, false);
+        }
     }
 
     void Update(){

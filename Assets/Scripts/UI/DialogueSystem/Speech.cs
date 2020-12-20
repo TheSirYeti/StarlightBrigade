@@ -25,7 +25,6 @@ public class Speech : MonoBehaviour
         foreach(int i in imagePerSentence){
             test += i + " ";
         }
-        print(test);
     }
 
     void Update(){
@@ -83,7 +82,6 @@ public class Speech : MonoBehaviour
     }
 
     void setAvatar(int image){
-        print(imagePerSentence[image]);
         for(int i = 0; i < images.Length; i++){
             images[i].enabled = false;
         }

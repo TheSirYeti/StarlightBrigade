@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Level Behaviour\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager_Boss1.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager_Boss2.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager2.cs" />
      <Compile Include="Assets\Scripts\Player\bulletScript.cs" />
      <Compile Include="Assets\Scripts\Player\Performance.cs" />

@@ -14,12 +14,11 @@ public class WaveManager_Boss1 : MonoBehaviour
     public bool inDialogue = false;
     public List<GameObject> cutscenes = new List<GameObject>();
     private int cutsceneManager = 0;
+    private GameObject currentDialogue;
+    private bool dialogueFlag;
 
     void Start()
     {
-        foreach(GameObject dialogue in cutscenes){
-            dialogue.SetActive(false);
-        }
         player = GameObject.FindWithTag("Player");
         SoundManager.instance.Play(SoundID.MUSIC_LEVEL1,true, 0.25f, 1f);
         initializePositionArray();
@@ -48,11 +47,14 @@ public class WaveManager_Boss1 : MonoBehaviour
             enemyAmount.Clear();
             switch(waveAmount){
                 case 3:
+                    currentDialogue = new GameObject();
+                    currentDialogue = Instantiate(cutscenes[cutsceneManager], cutscenes[cutsceneManager].transform.position, cutscenes[cutsceneManager].transform.rotation);
+                    currentDialogue.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
                     inDialogue = true;
-                    cutscenes[cutsceneManager].SetActive(true);
+                    dialogueFlag = true;
                     break;
                 case 2:
-                    GameObject boss = Instantiate(bossPrefab);
+                    GameObject boss = Instantiate(bossPrefab, new Vector3(-0.5f, 10, 0), Quaternion.identity);
                     break;
                 case 1:
                     inDialogue = true;
@@ -60,9 +62,13 @@ public class WaveManager_Boss1 : MonoBehaviour
                     break;
 
             }
-        } else if(cutscenes[cutsceneManager].GetComponent<Speech>().finished){
-            inDialogue = false;
-            cutsceneManager++;
+        } else {
+                if(currentDialogue.GetComponent<Speech>().finished && dialogueFlag){
+                print("fin");
+                dialogueFlag = false;
+                inDialogue = false;
+                cutsceneManager++;
+                }
         }
     }
 

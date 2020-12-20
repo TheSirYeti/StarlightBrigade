@@ -76,7 +76,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE BOSS
+  m_Text: 'THE BOSS
+
+
+'
 --- !u!1 &2283717463633997280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1675,7 @@ MonoBehaviour:
     type: 3}
   turret: {fileID: 6951734403621558448, guid: fb6748990a011c74a81db1b2773f62e9, type: 3}
   nextShot: 0
-  fireRate: 2.35
+  fireRate: 5
   spawnPoint1: {fileID: 6886779885221141660}
   spawnPoint2: {fileID: 6886779885579312246}
   spawnPoint3: {fileID: 6886779884976855386}
@@ -1693,9 +1696,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6886779885547602563}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
