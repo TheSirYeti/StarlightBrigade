@@ -57,8 +57,15 @@ public class WaveManager_Boss1 : MonoBehaviour
                     GameObject boss = Instantiate(bossPrefab, new Vector3(-0.5f, 10, 0), Quaternion.identity);
                     break;
                 case 1:
+                    currentDialogue = new GameObject();
+                    currentDialogue = Instantiate(cutscenes[cutsceneManager], cutscenes[cutsceneManager].transform.position, cutscenes[cutsceneManager].transform.rotation);
+                    currentDialogue.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
                     inDialogue = true;
-                    cutscenes[cutsceneManager].SetActive(true);
+                    dialogueFlag = true;
+                    break;
+                case 0:
+                    GameObject fade = GameObject.FindWithTag("FadeManager");
+                    fade.GetComponent<FadeManager>().startTransition(nextLevel);
                     break;
 
             }

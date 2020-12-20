@@ -1535,10 +1535,11 @@ MonoBehaviour:
   bossPrefab: {fileID: 6886779885547602563, guid: 1a6d6b5d41fa0f741b905e092cf4a89b,
     type: 3}
   player: {fileID: 814207686}
-  nextLevel: 
+  nextLevel: Cutscene1
   inDialogue: 0
   cutscenes:
   - {fileID: 8689723290386436419, guid: 9441b84b0a1752f4db21a4103b5151b5, type: 3}
+  - {fileID: 8689723290386436419, guid: 9b64e24ed9b003645befa595ee20332f, type: 3}
 --- !u!1 &2118795915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1627,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3894284110461676352, guid: 00b77a6323444004e852008decaa2c03,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5231405514736808735, guid: 00b77a6323444004e852008decaa2c03,
         type: 3}
       propertyPath: m_Name

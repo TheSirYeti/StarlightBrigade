@@ -57,6 +57,8 @@ public class PlayerBehaviour : MonoBehaviour
             die();
         }
         win();
+
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 
     void Movement(){

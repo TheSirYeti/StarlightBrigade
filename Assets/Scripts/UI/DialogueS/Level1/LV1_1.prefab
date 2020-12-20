@@ -578,11 +578,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 8689723290555755577}
   sentences:
-  - Damian! Do you copy?
-  - Loud and clear. What's the status?
-  - There's seems to be reinforcements coming your way. Be ready!
-  - Yup. I'm on it
-  - You can do it!
+  - Damian! Me escuchas?
+  - Todo claro, viejo. Que ocurre?
+  - Veo que vienen muchos naves enemigas hacia ti. Ten cuidado!
+  - Espero que no sean demasiadas. Me daria mucha pena arruinarles tantas naves, je
+  - Se que estas confiado, pero ten cuidado. Aqui vienen!
   typingSpeed: 0.02
   names:
   - Buckets

@@ -167,7 +167,7 @@ MonoBehaviour:
   - {fileID: 189275603906570444, guid: 1f6672d629f392d4088d08620f4456b8, type: 3}
   background: {fileID: 2133555671}
   player: {fileID: 1461294628}
-  nextLevel: Bossfight1
+  nextLevel: Cutscene2
   inDialogue: 0
   cutscenes:
   - {fileID: 8689723290386436419, guid: 19645591cc9878145a4ac8ac6e6f419f, type: 3}

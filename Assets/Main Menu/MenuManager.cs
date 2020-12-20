@@ -7,14 +7,17 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject controlsWindow;
     public GameObject creditsWindow;
+    public GameObject quickPlayWindow;
 
     void Start(){
         controlsWindow.SetActive(false);
         creditsWindow.SetActive(false);
+        quickPlayWindow.SetActive(false);
     }
     public void openControls(){
         controlsWindow.SetActive(true);
         creditsWindow.SetActive(false);
+        quickPlayWindow.SetActive(false);
     }
 
     public void closeControls(){
@@ -24,6 +27,7 @@ public class MenuManager : MonoBehaviour
     public void openCredits(){
         creditsWindow.SetActive(true);
         controlsWindow.SetActive(false);
+        quickPlayWindow.SetActive(false);
     }
 
     public void closeCredits(){
@@ -36,6 +40,16 @@ public class MenuManager : MonoBehaviour
 
     public void quitGame(){
         Application.Quit();
+    }
+
+    public void openQuickplay(){
+        quickPlayWindow.SetActive(true);
+        controlsWindow.SetActive(false);
+        creditsWindow.SetActive(false);
+    }
+
+    public void closeQuickplay(){
+        quickPlayWindow.SetActive(false);
     }
     
 }

@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 8689723290386436430}
   - component: {fileID: 8689723290386436429}
   m_Layer: 5
-  m_Name: LV1_Boss
+  m_Name: LV1_Boss2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,16 +578,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 8689723290555755577}
   sentences:
-  - Asi que tu eres el hombre que destruyo toda mi flota... Bien hecho
-  - No tendria que haber mandado tan pocos, no?
-  - Esta voz vendria siendo su lider? No eran fuertes, te sere honesto
-  - Hmm, lo tendre que anotar en mis apuntes.
-  - En tus... apuntes?
-  - No importa, sal de mi camino, necesito esa esmeralda
-  - Ah, tu tambien las quieres? No te sera tan facil, sabes. Estare en tu camino
-  - Porque yo soy...
-  - Dame, ya se quien es! ten cuidado el es...
-  - EL JEFE!!!
+  - Maldicion! Como he perdido contigo?
+  - Sal de mi camino, hombre
+  - Mmm... Tu ganas esta vez, muchachito
+  - 'Recuerda mi nombre: Dame'
+  - 'Dame... No me interesa, pero recuerda el mio: porque yo soy...'
+  - '"El jefe". Ya lo has dicho.'
+  - '....'
+  - Me vengare!
+  - Bien hecho, Dame! Tengo- Tenemos la esmeralda!
   typingSpeed: 0.02
   names:
   - Buckets
@@ -603,7 +602,7 @@ MonoBehaviour:
   - {fileID: 8689723288867082232}
   skip: 0
   isTyping: 0
-  imagePerSentence: 03000000030000000100000003000000010000000100000003000000030000000000000002000000
+  imagePerSentence: 020000000100000002000000010000000200000001000000020000000200000000000000
   finished: 0
 --- !u!95 &8689723290386436429
 Animator:

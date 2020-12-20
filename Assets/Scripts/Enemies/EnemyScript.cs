@@ -59,10 +59,12 @@ public class EnemyScript : MonoBehaviour
     }
 
     void checkDamaged(){
+        Color color;
         if(damageTimer > Time.time && diedTimer == -1){
             //animator.SetBool("isDamaged", true);
-            this.GetComponent<SpriteRenderer>().color = new Color(1,0.25f,0.25f,1);
-        } else this.GetComponent<SpriteRenderer>().color = new Color(1,1,1,1);//animator.SetBool("isDamaged", false);
+            color = new Color(1,0.25f,0.25f,1);
+            this.GetComponent<SpriteRenderer>().color = color;
+        } else { color = new Color(1,1,1,1); this.GetComponent<SpriteRenderer>().color = color; } //animator.SetBool("isDamaged", false);
     }
 
     void checkIfDead(){

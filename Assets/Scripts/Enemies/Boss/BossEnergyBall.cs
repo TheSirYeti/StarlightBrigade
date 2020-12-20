@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossEnergyBall : MonoBehaviour
 {
     public float speed;
+    public float size;
     // Start is called before the first frame update
     void Update()
     {
@@ -13,7 +14,7 @@ public class BossEnergyBall : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.localScale += new Vector3(1.2f,1.2f,1.2f) * Mathf.Sin(Time.deltaTime);
+        transform.localScale += new Vector3(size,size,size) * Mathf.Sin(Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D col){

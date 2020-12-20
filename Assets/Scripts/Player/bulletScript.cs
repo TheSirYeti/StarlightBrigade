@@ -37,7 +37,7 @@ public class bulletScript : MonoBehaviour
             Destroy(gameObject);
             GameObject player = GameObject.FindWithTag("Player");
             if(player.GetComponent<Performance>().hp <100){
-                player.GetComponent<Performance>().hp += 0.5f;
+                player.GetComponent<Performance>().hp += 0.3f;
             }
         }
         

@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\Level Behaviour\BorderConstraints.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\BossFight.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\CursorVisible.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\difficultyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\LowLifeUI.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager.cs" />
@@ -79,6 +80,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\UI\addHP.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonState.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueS\Cutscenes\CutsceneManager.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueS\Cutscenes\CutsceneTyper.cs" />
      <Compile Include="Assets\Scripts\UI\DialogueSystem\Speech.cs" />
      <Compile Include="Assets\Scripts\UI\FadeManager.cs" />
      <Compile Include="Assets\Scripts\UI\fullReset.cs" />

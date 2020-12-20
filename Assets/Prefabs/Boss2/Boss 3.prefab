@@ -1571,6 +1571,7 @@ GameObject:
   - component: {fileID: 6886779885547602575}
   - component: {fileID: 6886779885547602572}
   - component: {fileID: 6886779885547602573}
+  - component: {fileID: 6003357934928304304}
   m_Layer: 11
   m_Name: Boss 3
   m_TagString: Boss
@@ -1666,10 +1667,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ab40b784f45e84c98ab71e82eb2974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yGoal: 2
-  bulletPrefab: {fileID: 1391880641383808633, guid: 0ffd1dae1c07310468c71eda45f0fe9b,
+  yGoal: 4
+  bulletPrefab: {fileID: 1391880641383808633, guid: d30edc64745959c4ea51ee9a71e604f3,
     type: 3}
-  missilePrefab: {fileID: 1125969818640346784, guid: 20b071b2c21415b499b3da26ba057378,
+  missilePrefab: {fileID: 1125969818640346784, guid: ba413c3156e114c4aafec1aa5d42c7fa,
     type: 3}
   turret: {fileID: 6951734403621558448, guid: fb6748990a011c74a81db1b2773f62e9, type: 3}
   nextShot: 0
@@ -1680,8 +1681,8 @@ MonoBehaviour:
   spawnPoint4: {fileID: 6886779883863857695}
   spawnPoint5: {fileID: 6886779884406472707}
   spawnPoint6: {fileID: 6886779883792064699}
-  animator: {fileID: 0}
-  hp: 1200
+  animator: {fileID: 6003357934928304304}
+  hp: 1500
   damageTimer: 0
   diedTimer: -1
   maxHP: 0
@@ -1733,6 +1734,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 6.879698}
   m_EdgeRadius: 0
+--- !u!95 &6003357934928304304
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886779885547602563}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f9d20a7a005f99498f57e1186cedce1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6886779885579312247
 GameObject:
   m_ObjectHideFlags: 0

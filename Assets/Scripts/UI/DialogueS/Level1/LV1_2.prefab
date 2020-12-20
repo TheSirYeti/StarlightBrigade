@@ -505,13 +505,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 4519369503275640112}
   sentences:
-  - Damian! There's seems to be one more ship coming your way, something seems odd
-    about it. Be careful
-  - Only one ship? Who do they think I am?
-  - It gives off a large energy signature...
-  - It must be the gem! Go get it
-  - On it, chief
-  - Something does smell fishy...
+  - Dame, pareceria que viene una nave mas, no es como las otras, ten cuidado
+  - Solo una nave? Quien se piensan que soy?
+  - Emana una energia muy impotente, nose que puede ser...
+  - Claro! Es una de las esmeraldas! Ve ahora Dame, con urgencia
+  - Copiado, jefe
+  - Aqui hay algo raro...
   typingSpeed: 0.02
   names:
   - Buckets

@@ -33,7 +33,7 @@ public class Speech : MonoBehaviour
                 textBox.text = "";
                 int counter = 0;
                 foreach(char letter in sentences[index].ToCharArray()){
-                    if(counter >= 69){
+                    if(counter >= 69  && letter == ' '){
                         textBox.text += "\n";
                         counter = 0;
                     }
@@ -55,7 +55,7 @@ public class Speech : MonoBehaviour
         setAvatar(imagePerSentence[index]);
         foreach(char letter in sentences[index].ToCharArray()){
             if(!skip){
-                if(counter >= 69){
+                if(counter >= 69  && letter == ' '){
                     textBox.text += "\n";
                     counter = 0;
                 }

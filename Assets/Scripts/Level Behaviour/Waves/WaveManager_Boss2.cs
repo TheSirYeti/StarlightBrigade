@@ -61,6 +61,13 @@ public class WaveManager_Boss2 : MonoBehaviour
                 case 1:
                     GameObject boss3 = Instantiate(bossPrefab3, new Vector3(-0.5f, 10, 0), Quaternion.identity);
                     break;
+                case 0:
+                    currentDialogue = new GameObject();
+                    currentDialogue = Instantiate(cutscenes[cutsceneManager], cutscenes[cutsceneManager].transform.position, cutscenes[cutsceneManager].transform.rotation);
+                    currentDialogue.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+                    inDialogue = true;
+                    dialogueFlag = true;
+                    break;
                 
             }
         } else if(currentDialogue.GetComponent<Speech>().finished && dialogueFlag){
