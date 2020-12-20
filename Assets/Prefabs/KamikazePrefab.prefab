@@ -292,4 +292,4 @@ MonoBehaviour:
   body: {fileID: 127449501258506531}
   warningTime: 2.5
   spawnTime: 0
-  speed: 20
+  speed: 25

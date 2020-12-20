@@ -30,7 +30,8 @@ public class shipMovement : MonoBehaviour
                 col.gameObject.GetComponent<Performance>().hp-=10;
                 col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.time;
             }
-            Destroy(gameObject);
+            Destroy(transform.parent);
+            //Destroy(gameObject);
         }
     }
 }

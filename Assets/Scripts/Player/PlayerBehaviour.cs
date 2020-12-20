@@ -16,21 +16,31 @@ public class PlayerBehaviour : MonoBehaviour
     public float baseFire;
     public float nextShot;
 
-    public Transform spawnPosition1, spawnPosition2;
+    public Transform spawnPosition1, spawnPosition2, spawnPosition3, spawnPosition4, spawnPosition5;
+    public int power;
     public bool deathFlag = false;
     public float deathTime;
     public GameObject restartPanel;
     public GameObject winPanel;
+    public GameObject specialPanel;
+    public GameObject maxPanel;
+    private GameObject bullet1, bullet2, bullet3, bullet4, bullet5; 
+
 
     public float damageCooldownTimer;
     public float baseCooldown;
+    public bool specialReady = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = this;
+        power = 1;
         winPanel.SetActive(false);
         restartPanel.SetActive(false);
-        player = this;
+        print("false");
+        specialPanel.SetActive(false);
+        maxPanel.SetActive(false);
         fireRate = baseFire;
     }
 
@@ -75,9 +85,38 @@ public class PlayerBehaviour : MonoBehaviour
     void FireCheck(){
         if(Input.GetKey(KeyCode.Space)){
             if(nextShot < Time.timeSinceLevelLoad){
-                GameObject bullet1 = Instantiate(bulletPrefab, spawnPosition1.position, Quaternion.identity);
-                GameObject bullet2 = Instantiate(bulletPrefab, spawnPosition2.position, Quaternion.identity);
-                SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                switch(power){
+                    case 1:
+                        bullet1 = Instantiate(bulletPrefab, spawnPosition1.position, Quaternion.identity);
+                        SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                        break;
+                    case 2:
+                        bullet1 = Instantiate(bulletPrefab, spawnPosition2.position, Quaternion.identity);
+                        bullet2 = Instantiate(bulletPrefab, spawnPosition3.position, Quaternion.identity);
+                        SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                        break;
+                    case 3:
+                        bullet1 = Instantiate(bulletPrefab, spawnPosition1.position, Quaternion.identity);
+                        bullet2 = Instantiate(bulletPrefab, spawnPosition2.position, Quaternion.identity);
+                        bullet3 = Instantiate(bulletPrefab, spawnPosition3.position, Quaternion.identity);
+                        SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                        break;
+                    case 4:
+                        bullet1 = Instantiate(bulletPrefab, spawnPosition2.position, Quaternion.identity);
+                        bullet2 = Instantiate(bulletPrefab, spawnPosition3.position, Quaternion.identity);
+                        bullet3 = Instantiate(bulletPrefab, spawnPosition4.position, Quaternion.identity);
+                        bullet4 = Instantiate(bulletPrefab, spawnPosition5.position, Quaternion.identity);
+                        SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                        break;
+                    case 5:
+                        bullet1 = Instantiate(bulletPrefab, spawnPosition2.position, Quaternion.identity);
+                        bullet2 = Instantiate(bulletPrefab, spawnPosition3.position, Quaternion.identity);
+                        bullet3 = Instantiate(bulletPrefab, spawnPosition4.position, Quaternion.identity);
+                        bullet4 = Instantiate(bulletPrefab, spawnPosition5.position, Quaternion.identity);
+                        bullet5 = Instantiate(bulletPrefab, spawnPosition1.position, Quaternion.identity);
+                        SoundManager.instance.Play(SoundID.PLAYER_GUN,false, 0.1f, 1f);
+                        break;
+                }
                 nextShot = Time.timeSinceLevelLoad + fireRate;
             }
         }
@@ -86,7 +125,16 @@ public class PlayerBehaviour : MonoBehaviour
     void checkPerformance(){
         if(player.GetComponent<Performance>().hp >= 66.6f){
             fireRate = baseFire / 2;
-        } else fireRate = baseFire;
+            specialReady = true;
+            if(power < 5)
+                specialPanel.SetActive(true);
+            else maxPanel.SetActive(true);
+        } else { fireRate = baseFire; specialReady = false; specialPanel.SetActive(false); maxPanel.SetActive(false); }
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Performance>().hp >= 66.6f && power < 5){
+            power++;
+            player.GetComponent<Performance>().hp = 50;
+        }
     }
 
     void die(){

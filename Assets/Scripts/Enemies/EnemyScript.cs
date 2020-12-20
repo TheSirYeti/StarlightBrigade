@@ -108,6 +108,10 @@ public class EnemyScript : MonoBehaviour
                     hp = 6; //6
                     fireRate = 15;
                     break;
+                case 4:
+                    hp = 6;
+                    fireRate = 8;
+                    break;
             }
     }
 

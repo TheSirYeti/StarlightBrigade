@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Enemies\Kamikaze\KamikazeEnemy.cs" />
      <Compile Include="Assets\Scripts\Enemies\Kamikaze\shipMovement.cs" />
      <Compile Include="Assets\Scripts\Enemies\sentryTurret.cs" />
+     <Compile Include="Assets\Scripts\Enemies\triShotScript.cs" />
      <Compile Include="Assets\Scripts\Enemies\Turret.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Bonus.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\bonusScale.cs" />
