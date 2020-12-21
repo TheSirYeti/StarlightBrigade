@@ -21,6 +21,14 @@ public class PlayerBehaviour : MonoBehaviour
     public float deathTime;
     public GameObject restartPanel;
     public GameObject winPanel;
+<<<<<<< Updated upstream
+=======
+    public GameObject specialPanel;
+    public GameObject maxPanel;
+    private GameObject bullet1, bullet2, bullet3, bullet4, bullet5; 
+    private float secretTimer;
+
+>>>>>>> Stashed changes
 
     public float damageCooldownTimer;
     public float baseCooldown;
@@ -41,12 +49,15 @@ public class PlayerBehaviour : MonoBehaviour
             Movement();
             FireCheck();
             checkPerformance();
-            damageCooldown();
         } else 
         {
             die();
         }
         win();
+    }
+
+    void FixedUpdate(){
+        damageCooldown();
     }
 
     void Movement(){
@@ -108,8 +119,13 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     public void damageCooldown(){
-        if(damageCooldownTimer >= Time.timeSinceLevelLoad){
+        float time = Time.timeSinceLevelLoad;
+        secretTimer = damageCooldownTimer;
+        if(secretTimer > time){
             this.GetComponent<SpriteRenderer>().color = new Color(1,0.5f,0.5f,1);
-        } else this.GetComponent<SpriteRenderer>().color = new Color(1,1,1,1);
+        } 
+        if(secretTimer <= time){
+            this.GetComponent<SpriteRenderer>().color = new Color(1,1,1,1);
+        } 
     }
 }

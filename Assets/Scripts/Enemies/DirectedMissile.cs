@@ -53,9 +53,15 @@ public class DirectedMissile : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col){
         if(preStartTime < Time.timeSinceLevelLoad){
             if(col.gameObject.tag.Equals("Player")){
+<<<<<<< Updated upstream
                 if(col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.time){
+=======
+                if(col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.timeSinceLevelLoad){
+                    //col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+                    //col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+>>>>>>> Stashed changes
                     col.gameObject.GetComponent<Performance>().hp-=10;
-                    col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.time;
+                    col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.timeSinceLevelLoad;
                 }
             }
             Destroy(gameObject);

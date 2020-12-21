@@ -49,6 +49,7 @@
      <Compile Include="Assets\Main Menu\MenuManager.cs" />
      <Compile Include="Assets\Main Menu\Select.cs" />
      <Compile Include="Assets\Main Menu\SelectControls.cs" />
+     <Compile Include="Assets\Scripts\Background\BackgroundLoop.cs" />
      <Compile Include="Assets\Scripts\Background\BackgroundMovement.cs" />
      <Compile Include="Assets\Scripts\Enemies\Boss\BossEnergyBall.cs" />
      <Compile Include="Assets\Scripts\Enemies\Boss\BossScript.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Scripts\Enemies\enemyBullet.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\Enemies\energyBallScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Kamikaze\shipMovement.cs" />
      <Compile Include="Assets\Scripts\Enemies\Turret.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Bonus.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\bonusScale.cs" />
@@ -64,14 +66,18 @@
      <Compile Include="Assets\Scripts\Level Behaviour\BossFight.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\CursorVisible.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\LowLifeUI.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\resetSound.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager.cs" />
      <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager_Boss1.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager_Boss2.cs" />
+     <Compile Include="Assets\Scripts\Level Behaviour\Waves\WaveManager2.cs" />
      <Compile Include="Assets\Scripts\Player\bulletScript.cs" />
      <Compile Include="Assets\Scripts\Player\Performance.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\UI\addHP.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonState.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueS\Cutscenes\CutsceneManager.cs" />
      <Compile Include="Assets\Scripts\UI\DialogueSystem\Speech.cs" />
      <Compile Include="Assets\Scripts\UI\FadeManager.cs" />
      <Compile Include="Assets\Scripts\UI\fullReset.cs" />

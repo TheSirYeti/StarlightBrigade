@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1617287021738931122}
   - component: {fileID: 4118670499967547492}
   - component: {fileID: 6824718542075315129}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MissilePrefab
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}

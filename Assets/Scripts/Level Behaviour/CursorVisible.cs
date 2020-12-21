@@ -15,9 +15,21 @@ public class CursorVisible : MonoBehaviour
     void Update()
     {
         GameObject player = GameObject.FindWithTag("Player");
+<<<<<<< Updated upstream
         if(player.GetComponent<PlayerBehaviour>().deathFlag || player.GetComponent<PlayerBehaviour>().wonLevel){
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+=======
+            if(player == null){
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            } else {
+                if(player.GetComponent<PlayerBehaviour>().deathFlag || player.GetComponent<PlayerBehaviour>().wonLevel){
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
+            }
+>>>>>>> Stashed changes
     }
 }

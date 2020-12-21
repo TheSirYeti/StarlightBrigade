@@ -17,11 +17,15 @@ public class WaveManager_Boss1 : MonoBehaviour
 
     void Start()
     {
+<<<<<<< Updated upstream
         foreach(GameObject dialogue in cutscenes){
             dialogue.SetActive(false);
         }
+=======
+        SoundManager.instance.StopAll();
+        SoundManager.instance.Play(SoundID.MUSIC_LEVEL1_BOSS,true, 0.25f, 1f);
+>>>>>>> Stashed changes
         player = GameObject.FindWithTag("Player");
-        SoundManager.instance.Play(SoundID.MUSIC_LEVEL1,true, 0.25f, 1f);
         initializePositionArray();
     }
 

@@ -32,11 +32,12 @@ public class Speech : MonoBehaviour
                     if(counter >= 69){
                         textBox.text += "\n";
                         counter = 0;
+                    } else {
+                        textBox.text += letter;
+                        counter++;
+                        skip = true;
+                        isTyping = false;
                     }
-                    textBox.text += letter;
-                    counter++;
-                    skip = true;
-                    isTyping = false;
                 }
             } else if(isTyping == false){
                 NextSentence();
@@ -54,10 +55,11 @@ public class Speech : MonoBehaviour
                 if(counter >= 69){
                     textBox.text += "\n";
                     counter = 0;
-                }
+                } else {
                 textBox.text += letter;
                 counter++;
                 yield return new WaitForSeconds(typingSpeed);
+                }
             }
         }
         isTyping = false;

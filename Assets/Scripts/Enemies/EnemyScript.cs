@@ -27,7 +27,7 @@ public class EnemyScript : MonoBehaviour
 
     void Start()
     {
-        nextShot = Time.time + Random.Range(3,500) / 10f;
+        nextShot = Time.timeSinceLevelLoad + Random.Range(3,500) / 10f;
         randomVariable = Random.Range(500, 600) / 100f;
         SelectEnemyType();
     }
@@ -59,7 +59,12 @@ public class EnemyScript : MonoBehaviour
     }
 
     void checkDamaged(){
+<<<<<<< Updated upstream
         if(damageTimer > Time.time && diedTimer == -1){
+=======
+        Color color;
+        if(damageTimer > Time.timeSinceLevelLoad && diedTimer == -1){
+>>>>>>> Stashed changes
             //animator.SetBool("isDamaged", true);
             this.GetComponent<SpriteRenderer>().color = new Color(1,0.25f,0.25f,1);
         } else this.GetComponent<SpriteRenderer>().color = new Color(1,1,1,1);//animator.SetBool("isDamaged", false);
@@ -67,11 +72,11 @@ public class EnemyScript : MonoBehaviour
 
     void checkIfDead(){
         if(hp <= 0 && diedTimer == -1){
-            diedTimer = Time.time + 1.5f;
+            diedTimer = Time.timeSinceLevelLoad + 1.5f;
             GetComponent<Collider2D>().enabled = false;
         }
 
-        if(diedTimer < Time.time && diedTimer != -1){
+        if(diedTimer < Time.timeSinceLevelLoad && diedTimer != -1){
             Destroy(gameObject);
         } else if(diedTimer != -1){
             animator.SetBool("dead", true);
@@ -80,9 +85,9 @@ public class EnemyScript : MonoBehaviour
 
     void MovementAndFire(){
         if(transform.position.y <= yGoal){
-            if(nextShot <= Time.time){
+            if(nextShot <= Time.timeSinceLevelLoad){
                 fire();
-                nextShot += Time.time + (Random.Range(50,fireRate*10) / 10f);
+                nextShot += Time.timeSinceLevelLoad + (Random.Range(50,fireRate*10) / 10f);
             }
         }
 
@@ -118,7 +123,7 @@ public class EnemyScript : MonoBehaviour
             Destroy(col.gameObject);
         }
         else if(col.gameObject.tag.Equals("EnemyBullet")){
-            if(col.gameObject.GetComponent<DirectedMissile>() != null && col.gameObject.GetComponent<DirectedMissile>().preStartTime < Time.time){
+            if(col.gameObject.GetComponent<DirectedMissile>() != null && col.gameObject.GetComponent<DirectedMissile>().preStartTime < Time.timeSinceLevelLoad){
                 hp--;
                 damageTimer = Time.timeSinceLevelLoad + 1f;
                 Destroy(col.gameObject);

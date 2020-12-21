@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
     public GameObject creditsWindow;
 
     void Start(){
+        SoundManager.instance.StopAll();
+        SoundManager.instance.Play(SoundID.MAINMENU,true, 0.35f, 1f);
         controlsWindow.SetActive(false);
         creditsWindow.SetActive(false);
     }

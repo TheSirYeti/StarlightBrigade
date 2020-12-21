@@ -30,9 +30,9 @@ public class Performance : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag.Equals("EnemyBullet")){
-            if(this.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.time){
+            if(this.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.timeSinceLevelLoad){
                 this.gameObject.GetComponent<Performance>().hp-=10;
-                this.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = this.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.time;
+                this.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = this.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.timeSinceLevelLoad;
             }
             Destroy(col.gameObject);
         }

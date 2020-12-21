@@ -20,6 +20,7 @@ public class WaveManager : MonoBehaviour
 
     void Start()
     {
+        SoundManager.instance.StopAll();
         //foreach(GameObject dialogue in cutscenes){
         //    dialogue.SetActive(false);
         //}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5882084518411039419}
   - component: {fileID: 4470620269587470467}
   - component: {fileID: 4464118393772290601}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9147296681056710829}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4147818530759184479}
   - component: {fileID: 2663348501277077957}
   - component: {fileID: 7642114456693892717}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BossHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2529063566598068283}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 800027261294077198}
   - component: {fileID: 6474056715309348133}
   - component: {fileID: 5357592406842758712}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779883612982787}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779883646078402}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 6886779883754884629}
   - component: {fileID: 6886779883754884650}
   - component: {fileID: 6886779883754884651}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779883792064699}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779883863857695}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 6886779883976403959}
   - component: {fileID: 6886779883976403956}
   - component: {fileID: 6886779883976403957}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 6886779883986037394}
   - component: {fileID: 6886779883986037395}
   - component: {fileID: 6886779883986037392}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884093564280}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884151775795}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884161772041}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884406472707}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -965,7 +965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884735775724}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884739351622}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884766021340}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 6886779884770259076}
   - component: {fileID: 6886779884770259077}
   - component: {fileID: 6886779884770259098}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884810462714}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   - component: {fileID: 6886779884820121069}
   - component: {fileID: 6886779884820121058}
   - component: {fileID: 6886779884820121059}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1345,7 +1345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884853587100}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779884976855386}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 6886779885138334692}
   - component: {fileID: 6886779885138334693}
   - component: {fileID: 6886779885138334714}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Turret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779885221141660}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1570,7 @@ GameObject:
   - component: {fileID: 6886779885547602572}
   - component: {fileID: 6886779885547602573}
   - component: {fileID: 6886779885547602562}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -1760,7 +1760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779885579312246}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SpawnPoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779885624942911}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,7 +1820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6886779885650475580}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1853,7 +1853,7 @@ GameObject:
   - component: {fileID: 5731005712121254162}
   - component: {fileID: 747737273094571582}
   - component: {fileID: 2262594642303007593}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1951,7 @@ GameObject:
   - component: {fileID: 8715555315825566474}
   - component: {fileID: 8689430632093895655}
   - component: {fileID: 7508650233991773989}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

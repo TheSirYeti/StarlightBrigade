@@ -22,9 +22,9 @@ public class enemyBullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag.Equals("Player")){
-            if(col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.time){
+            if(col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer <= Time.timeSinceLevelLoad){
                 col.gameObject.GetComponent<Performance>().hp-=10;
-                col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.time;
+                col.gameObject.GetComponent<PlayerBehaviour>().damageCooldownTimer = col.gameObject.GetComponent<PlayerBehaviour>().baseCooldown + Time.timeSinceLevelLoad;
             }
             Destroy(gameObject);
         }

@@ -81,5 +81,10 @@ public enum SoundID
     ENEMY_MISSILE,
     LOW_HP,
     EXPLOSION,
-    INTRO_SB
+    INTRO_SB,
+    MUSIC_LEVEL1_BOSS,
+    MUSIC_LEVEL2,
+    MUSIC_LEVEL2_BOSS,
+    MAINMENU,
+    CUTSCENE
 }

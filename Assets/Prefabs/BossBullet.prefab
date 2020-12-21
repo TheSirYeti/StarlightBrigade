@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!96 &7088807058972553252
 TrailRenderer:
   serializedVersion: 2
